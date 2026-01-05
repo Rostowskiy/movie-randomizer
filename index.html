@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Рандомайзер: фильмы и сериалы</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app-header">
+        <h1 class="app-title">Что смотрим?</h1>
+        <p class="app-description">Выбери категорию и крути рандомайзер</p>
+      </header>
+
+      <section class="panel">
+        <div class="category">
+          <div class="category-buttons">
+            <button id="moviesBtn" class="category-btn">Фильмы</button>
+            <button id="seriesBtn" class="category-btn">Сериалы</button>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="rollBtn" class="roll-btn">Ролл</button>
+          <p class="hint">Подбор строится на загруженных списках в JSON</p>
+        </div>
+
+        <div class="status hidden">
+          <p id="statusText">Сначала выбери категорию</p>
+        </div>
+      </section>
+
+      <section class="result-card hidden">
+        <p class="result-label">Сейчас смотрим</p>
+        <p id="resultText" class="result-text">пока ничего</p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
